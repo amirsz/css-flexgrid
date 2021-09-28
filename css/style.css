@@ -1,0 +1,86 @@
+/*
+  === Parent properties ===
+
+  1-flex-direction:
+  row          = (flex default value) axis main,cross
+  row-reverse
+  column       axis cross,main
+  column-reverse
+  ! Note: flex axis by default is main(row) & cross(column) therefore
+  when you change flex direction to column the axis will be reverse so align-items
+  and justify-content operation will also reverse
+  ------------------------------
+  2-justify-content:
+  flex-start    = (default) start from default direction by default set on ltr
+  flex-end      = start from rtl but items direction by default ltr;
+  space-between = space between items from center
+  space-evenly  = equal space between items from left, center and right
+  ------------------------------
+  3-align-items:
+  values like justify-content
+  ------------------------------
+  4-flex-wrap: 
+  nowrap (default)
+  wrap          = When the width of the items is less than what you defined some of them break to the next row
+  ------------------------------
+  5-align-content:
+  values like justify-content but affects on flex rows
+  ------------------------------
+  6-order:
+  1
+  2
+  3
+  ...
+  not recommended
+  ------------------------------
+  7-flex-grow: 
+  numeric value for each child in parent
+  for example assign 1 to one of the items and another one 5
+  these items will fill the empty space and 5 faster than 1 filled
+  ------------------------------
+  8-flex-shrink: 
+  reverse of flex-glow items get smaller
+  ------------------------------
+  9-flex-basis:
+  like min-width
+
+  ------------------------------
+  10-flex:
+  flex-grow flex-shrink flex-asis or one number ex(1 1 200px)ex2(1)
+  */
+.parent {
+  height: 100vh;
+  background: #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.h1-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parent > div {
+  width: 300px;
+  height: 200px;
+}
+.child1 {
+  background: #000000;
+}
+.child2 {
+  background: #ff0000;
+}
+.child3 {
+  background: #eeff00;
+}
+.child4 {
+  background: #ffffff;
+}
+.child5 {
+  background: #0d38f7;
+}
+.child6 {
+  background: #f70d0d;
+}
