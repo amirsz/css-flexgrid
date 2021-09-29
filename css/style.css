@@ -1,0 +1,58 @@
+:root {
+  --primaryColor: #6d28d9;
+  --secondaryColor: #ede9fe;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGray: #7c7c7c;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6;
+}
+
+body {
+  color: var(--mainBlack);
+  background-color: var(--bodyColor);
+  position: relative;
+  font-family: 'Oswald', 'sans-serif' !important;
+}
+.navbar {
+  background-color: var(--secondaryColor);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+.nav-control {
+  max-width: 1170px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.menu-icon, .cart-btn {
+  color: var(--primaryColor);
+}
+.cart-btn i, .menu-icon i {
+  font-size: 1.3rem;
+}
+.cart-btn {
+  position: relative;
+}
+.nav-title {
+  color: var(--mainBlack);
+  font-size: 1.1rem;
+}
+.cart-items {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  font-size: 0.76rem;
+  background-color: var(--mainRed);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  color: var(--secondaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
